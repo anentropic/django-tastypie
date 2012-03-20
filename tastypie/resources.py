@@ -1484,7 +1484,7 @@ class ModelResource(Resource):
             result = fields.FloatField
         elif f.get_internal_type() in ('DecimalField',):
             result = fields.DecimalField
-        elif f.get_internal_type() in ('IntegerField', 'PositiveIntegerField', 'PositiveSmallIntegerField', 'SmallIntegerField'):
+        elif f.get_internal_type() in ('IntegerField', 'PositiveIntegerField', 'PositiveSmallIntegerField', 'SmallIntegerField', 'AutoField'):
             result = fields.IntegerField
         elif f.get_internal_type() in ('FileField', 'ImageField'):
             result = fields.FileField
